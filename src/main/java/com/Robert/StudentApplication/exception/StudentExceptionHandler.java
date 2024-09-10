@@ -1,6 +1,5 @@
 package com.Robert.StudentApplication.exception;
 
-import com.Robert.StudentApplication.StudentApplication;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
