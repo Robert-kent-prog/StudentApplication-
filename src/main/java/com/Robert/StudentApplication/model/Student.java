@@ -3,10 +3,11 @@ package com.Robert.StudentApplication.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "students")
+@Document(collection = "students") // initialization of the collection name
 public class Student {
 
-    @Id
+    //all the avcailable fields in the students system.
+    @Id//making the id fild to be autogenareated by the mongo db
     private Long id;
     private String firstName;
     private String lastName;
@@ -15,8 +16,9 @@ public class Student {
     private String course;
     private String yearOfStudy;
 
+    //All the constructors and the getrters and setters for trhe fields.
     public Student(Long id, String firstName, String lastName, String regNo,
-                   String age, String course, String yearOfStudy) {
+            String age, String course, String yearOfStudy) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
