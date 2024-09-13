@@ -12,15 +12,17 @@ import java.util.Optional;
 @Service
 public class StudentServiceImp implements StudentService {
 
-    private StudentRepository studentRepository;
+    private final StudentRepository studentRepository;
+
     public StudentServiceImp(StudentRepository studentRepository) {
         super();
         this.studentRepository = studentRepository;
     }
 
-    //public Student saveStudent(Student student) {
-    //    return studentRepository.save(student);
-    //}
+    @Override
+    public Student saveStudent(Student student) {
+        return studentRepository.save(student);
+    }
 
     @Override
     public List<StudentApplication> getAllStudents() {
@@ -33,7 +35,7 @@ public class StudentServiceImp implements StudentService {
     }
 
     @Override
-    public Optional<StudentApplication> getStudentById(Long id) {
+    public Optional<StudentApplication> getStudentById(String id) {
         return studentRepository.findById(id);
     }
 

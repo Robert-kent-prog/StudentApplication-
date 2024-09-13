@@ -8,7 +8,7 @@ public class Student {
 
     //all the avcailable fields in the students system.
     @Id//making the id fild to be autogenareated by the mongo db
-    private Long id;
+    private String id;
     private String firstName;
     private String lastName;
     private String regNo;
@@ -17,7 +17,7 @@ public class Student {
     private String yearOfStudy;
 
     //All the constructors and the getrters and setters for trhe fields.
-    public Student(Long id, String firstName, String lastName, String regNo,
+    public Student(String id, String firstName, String lastName, String regNo,
             String age, String course, String yearOfStudy) {
         this.id = id;
         this.firstName = firstName;
@@ -28,11 +28,11 @@ public class Student {
         this.yearOfStudy = yearOfStudy;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
