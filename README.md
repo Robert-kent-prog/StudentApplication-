@@ -34,6 +34,3 @@ A RESTful CRUD API built with Spring Boot and MongoDB for managing student data.
 3. Start the application with `mvn spring-boot:run`.
 4. Test the API using tools like Postman or cURL.
 
----
-
-This description is concise, highlights the key aspects of your project, and provides enough detail for others to understand its purpose and functionality. Let me know if you'd like further refinements! 😊
